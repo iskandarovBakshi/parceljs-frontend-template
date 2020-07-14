@@ -1,0 +1,8 @@
+node_modules
+.cache
+.vscode
+.idea
+dist
+dist*.zip
+dist*.rar
+.DS_Store

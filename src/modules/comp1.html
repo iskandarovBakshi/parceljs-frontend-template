@@ -1,0 +1,12 @@
+<h4>This is component</h4>
+<ul>
+<each loop="item,index in users">
+  <li>{{item}}</li>
+</each>
+</ul>
+<if condition="isDirector">
+  <p>welcome director!</p>
+</if>
+<if condition="!isDirector">
+  <p>welcome parent!</p>
+</if>
