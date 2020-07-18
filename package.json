@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel -p 3000 src/*.html",
-    "start": "nodemon --watch .posthtmlrc.js --exec 'npm run serve'",
-    "build": "parcel build --public-url './' src/*.html",
-    "h": "parcel"
+    "start": "parcel -p 3000 src/*.njk",
+    "build": "parcel build --no-minify --public-url './' src/*.njk"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +21,14 @@
     "posthtml-expressions": "^1.4.5",
     "posthtml-include": "^1.4.3",
     "posthtml-modules": "^0.6.2",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "nunjucks": "^3.2.1",
+    "parcel-plugin-nunjucks": "^2.2.1"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "watchreload": {
     "files": []

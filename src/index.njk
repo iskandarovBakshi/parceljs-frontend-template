@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Journal</title>
-  <link rel="stylesheet" href="scss/main.scss">
+  {% include 'modules/styles.njk' %}
 </head>
 <body>
-  <h1>{{helloText}}</h1>
-  <include src="modules/comp1.html"></include>
-
-  <script src="js/main.js"></script>
+  <p class="txtClass">{{txt}}</p>
+  {% include "modules/scripts.njk" %}
 </body>
 </html>
